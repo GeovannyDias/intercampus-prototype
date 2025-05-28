@@ -1,0 +1,115 @@
+/* Fuente y ajustes generales */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: #ffff;
+    margin-left: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+    background-color: #f2f2f2;
+    color: #555;
+    text-align: center;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+/* Estilos específicos por sección */
+.logo-udla {
+    display: block;
+    margin: 2em auto;
+    max-width: 200px;
+}
+
+.bienvenida {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.categoria {
+    background-color: #f0f0f0;
+    border-left: 4px solid #00cc66;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+.post {
+    background-color: #f0f0f0;
+    border-left: 4px solid #0077cc;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.post.respuesta {
+    margin-left: 2em;
+    border-left-color: #00aa88;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .categorias {
+        flex-direction: column;
+    }
+}
+
+
+/* HORARIOS */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+}
